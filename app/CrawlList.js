@@ -74,7 +74,7 @@ let ParseTable = async (outputArray = [], baseURL) => {
     // @TODO 5. 抓取下一層網頁
     // 如果需要使用，則移除註解「//」即可
 
-    //await CrawlItem(itemURL, output)
+    await CrawlItem(itemURL, output)
 
     // =================================================================
     
