@@ -29,6 +29,9 @@ let CrawlItemPage = async (baseURL = 'https://catweb.ncl.edu.tw/QandA/page/31939
   // @TODO 1. 取得必要資訊
   // 請修改此處以抓取正確的資訊。
 
+// dc.type
+outputItem['dc.type'] = $html.find('#block-system-main > div > div.content.node-reference > div > table > tbody > tr:nth-child(3) > td > div > div').html()
+
   // 將回覆儲存到dc.description
   outputItem['dc.description'] = $html.find('#block-system-main > div > div.content.node-reference > div > table > tbody > tr:nth-child(4) > td > div > div').html()
   
