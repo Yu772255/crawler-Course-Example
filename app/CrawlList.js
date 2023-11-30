@@ -67,6 +67,9 @@ let ParseTable = async (outputArray = [], baseURL) => {
     // 將日期儲存到dc.date
     output['dc.date'] = ResolveDate(date)
 
+    //將提問者儲存到dc.creator
+    output['dc.creator'] = eleTr.find('td:eq(0)').html()
+
     // =================================================================
     // @TODO 5. 抓取下一層網頁
     // 如果需要使用，則移除註解「//」即可
