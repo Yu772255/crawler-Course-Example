@@ -54,6 +54,7 @@ let ParseTable = async (outputArray = [], baseURL) => {
 
     output['id'] = itemURL
     output['dc.identifier'] = itemURL
+    output['dc.type'] = itemURL
 
     // =================================================================
     // @TODO 4. 取得其他資訊
